@@ -1,34 +1,68 @@
 body {
-  background-color: #EEE;
-  font-family: Lato;
+  background-color:#DADED4;
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-#container {
-  font-family: Lato;
-  background-color: white;
-  width: 1200px;
-  margin-left: auto;
+
+/* HEADER POSITIONING */
+.big-title{
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 3px;
+  padding: 0px 0 0px 0;
+  text-transform: uppercase;
 }
-#header
-{
-  font-family: Lato;
-  background-color: gray;
-  color: white;
+.desc{
+  font-size:18px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 3px;
+  padding: 40px 0 0px 0;
+  text-transform: uppercase;
+}
+
+.nav{
+  float: right ;
+  font-size: 18px;
+  word-spacing: 20px;
+  letter-spacing: .5px;
+  padding: 100px 0 0px 0;
+  margin-top: -130px;
+  text-transform: uppercase;
+}
+.gradient{
+  clear:both;
+  height: 20px;
+  background: #466368;
+  background: linear-gradient(grey, #DADED4);
+}
+/*styling for tags */
+section {
+  clear:both;
   text-align: left;
 }
-nav{
-  background-color: black;
-  text-align: right;
-  /*border-top: 10px solid white;*/
-  font-size: 30px;
-  font-color: white;
-  font-weight: 600;
-  letter-spacing: .5px;
-  /*line-height: 60px;*/
-  padding: 20px 0 20px 0;
-  text-transform: uppercase ;
+
+/*FEET FETISH*/
+
+
+/*MAIN LINK STYLE*/
+a:link {
+  text-decoration: none;
+  color: #3C403D;
 }
 a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+  color: #3C403D;
+  border: 2px solid #3C403D;
+  padding: 2px;
+}
+
+a:visited {
+  color: #3C403D;
+}
+
+a:active{
+  color: #39603D;
 }
