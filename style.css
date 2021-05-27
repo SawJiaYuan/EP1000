@@ -1,12 +1,20 @@
 body {
-  background-color:#DADED4;
+  background-color:#F5FFFA;
+  /*background: radial-gradient(#F5FFFA);*/
   font-family: 'Rajdhani', sans-serif;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
+/*color palette #F5FFFA(mint cream),Thistle, Yellow-Green #A7D930,#31595e(Paint Chip)
 
 /* HEADER POSITIONING */
+header{
+  /*background: linear-gradient(#F5FFFA, thistle);*/
+  /*height: 120px;*/
+
+}
 .big-title{
+  margin-left: 10px;
   float: left;
   font-size: 48px;
   font-weight: 100;
@@ -16,6 +24,7 @@ body {
   text-transform: uppercase;
 }
 .desc{
+
   font-size:18px;
   font-weight: 100;
   letter-spacing: .5px;
@@ -25,7 +34,8 @@ body {
 }
 
 .nav{
-  float: right ;
+  margin-right: 10px;
+  float :right ;
   font-size: 18px;
   word-spacing: 20px;
   letter-spacing: .5px;
@@ -34,17 +44,120 @@ body {
   text-transform: uppercase;
 }
 .gradient{
+
   clear:both;
-  height: 20px;
-  background: #466368;
-  background: linear-gradient(grey, #DADED4);
+  height: 5px;
+  background : #466368;
+  background: linear-gradient(grey, Thistle);
 }
+.gradient2{
+
+  height: 5px;
+  background : #466368;
+  background: linear-gradient(grey, #F5FFFA);
+  margin-bottom: : 0px;
+}
+.content-text1{
+
+  border: 2px solid black;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  position: center;
+  content-top:120px;
+  text-align: left;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 0px;
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 28px;
+  font-weight: 100;
+
+}
+.content-text2{
+
+  border: 2px solid black;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  position: center;
+  content-top:120px;
+  text-align: left;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 0px;
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 28px;
+  font-weight: 100;
+
+}
+
+.contents{
+  background-image: url("contentimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  position: relative;
+  height: 800px;
+}
+.contents2{
+    background-color: #F5FFFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    position: relative;
+    height: 800px;
+
+}
+/* The hero image */
+.hero {
+  background-image: url("hero.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero2 {
+  background-image: url("hero21.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
 /*styling for tags */
 section {
   clear:both;
   text-align: left;
 }
+img{
+  height: 400px;
+  width:400px;
 
+}
 /*FEET FETISH*/
 
 
