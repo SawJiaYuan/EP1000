@@ -26,21 +26,22 @@
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About-Me</a>
-        <a href="project.html">Project</a>
+        <a href="project.html">Project/CA2</a>
         <a href="contacts.html">Contacts</a>
       </nav>
       <div class="sidenav">
         <a href="#safety">Fablab Safety</a>
         <a href="#websitedev">Website Development</a>
-        <a href="#3Dmodelling">3D design and Modelling</a>
-        <a href="#finalproj">Final Project</a>
-</div>
+        <a href="#lasercut">lasercutting</a>
+        <a href="#3dprint">3D Printing</a>
+        <a href="finalproj.html">Final Project</a>
+      </div>
 
     </header>
     <section class="gradient">
     </section>
     <!--Hero-->
-    <section class="hero">
+    <!--<section class="hero">
 
     <div class="hero-text">
       <h1>Welcome to EP1000</h1>
@@ -48,13 +49,118 @@
     </div>
     </section>
     <section class="gradient2">
-    </section>
+    </section>-->
 
 
     <!--Main content goes here-->
     <section class="contents">
+      <div class="content-text1">
+        <div class="safety" id="safety">
+          <div class="safety-text">
+            <h2>Safety in FabLab</h2>
+            <img src="images/warimg.jpg" alt="">
+            <p>
+            When dealing with machinery that can cause harm or injury , it is important to be trained in the dangers associated with operating the machinery and how to properly
+            operate it. In EP1000, we will be operating lazer cutters and 3D printers both with each of their own hazards. We also learnt about proper procedures in case of an emergency,
+            how do we properly evacuate, react in dangerous situations to be as safe as possible.
+            </p>
+            Before working with any of these machinery, we had to go through certification quizzes for both lazer cutting and 3D printing online
+            before we can start work. By getting a certain score on the test then we can continue on.
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="websitedev">
+        </div>
+        <div class="lasercut" id="lasercut">
+          <div class="lasercut-text">
+            <h2>Lasercutting</h2>
+             <h3>What is laser cutting?</h3>
+             <p>
+              Lasercutting is where a high intensity laser is used to cut objects,usually thin panels of material, through vaporisation of the laser, thus "cutting"
+              the material.In layman's terms, a form of controlled burning. In EP1000, We will primarily use 3mm thick sheets of plywood to lasercut.
+             </p>
+             <img src="images/Lasercut/lasercut.jpg" alt=" lasercutr" width=50% height=50%>
+             <p>
+              Example of wood used to lasercut
+             </p>
+              <h3>Laser Cutting Design</h3>
+              <p>
+              Lasercutting requires a .DXF file in order for the laser cutting program to translate it into GCode,
+              a form of machine movement language to tell the on board motors how to move to cut the object.But first, a 3d model must be designed to lasercut.
+              <h3>CA2 Laser Cutting</h3>
+              In our assignment, we were required to laser cut a music box designed to fit a music chime.we must first draw a rough idea for the box then translate it to a 3D model.
+              </p>
+              <p>Below is a guide video given by the teacher for us to learn how to make laser cut designs </p>
+              <iframe width="640" height="360" src="https://www.youtube.com/embed/sHCU5l3nqhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img src="images/Lasercut/hiyo1.jpg" alt="">
+              <p>
+              To assemble a box made with lazer cutting and without the use of glue, tabs are needed to join pieces of wood together.Essentially it is like making a puzzle.
+              There is a "negative" pattern and a "positive" pattern
+              </p>
+              <img src="images/Lasercut/ao.png" alt="">
+              <p>The "positive" side with protrusions. (This is the base)</p>
+              <img src="images/Lasercut/tu.png" alt="">
+              <p>The "negative" side with indents/slots the protrusions can fit in. (This is the sides)</p>
+              <img src="images/Lasercut/buping.png" alt="">
+              <p> When the two sides meet they form a joint , holding the two sides together.</p>
+              <h3>Fusion 360 Design</h3>
+              <p>First the parametric constraints must be set by the user, the constraints that I used are as follow</p>
+              <img src="images/Lasercut/parametric.png" alt="">
+              <p>I keyed in the dimensions that i wanted for the box, the height,length etc.</p>
+              <p>Using that i sketched out a box with the required number of tabs per side using the formulae given in the video.</p>
+              <img src="images/Lasercut/hiyo1.png" alt="">
+              <p>I did the same for all sides of the box (except the lid) and used the "combine" tool to cut intersecting sections to form those slots.</p>
+              <img src="images/Lasercut/combine.png" alt="">
+              <p>Then i proceeded to design the hinge and lid for the music box</p>
+              <img src="images/Lasercut/hiyo2.png" alt="">
+              <p> With that i have the finished model of the laser cut music box. </p>
+              <iframe src="https://ichat851.autodesk360.com/shares/public/SH9285eQTcf875d3c53974ac59cecf7ca351?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+              <a href="https://a360.co/3BjDVCI">Download</a>
+              <p>with that i converted the sides to dwg files and added a vector image for engraving</p>
+              <img src="images/Lasercut/hitodwg.png" alt=""width=50% height=50%>
+              <h3>laser cutting practical</h3>
+              <p>We then went to the FabLab at T11 to do our practical prints for the box</p>
+              <p>The lecturer taught us the basic settings to cut the stock 3mm plywood that the lab had and also taught us to cut by ourselves a test box</p>
+              <img src="images/Lasercut/lasercut3.jpg" alt=""width=50% height=50%>
+              <p>here are the reccommended settings the teacher advised us to use. Essentially in the CorelDraw Program, we select which parts are to be engraved and which parts to be cut out</p>
+              <img src="images/Lasercut/lasercut4.jpg" alt=""width=50% height=50%>
+              <p>Engraving is the process where the aser tones down its intensity and does a light 'cut' on the surface' turning the area dark</p>
+              <p>Cutting is the process where the laser is a the reccommended cutting parameters and cuts through the 3mm thick plywood</p>
+              <img src="images/Lasercut/lasercut2.jpg" alt=""width=50% height=50%>
+              <p>this is the test cut that we did, note that the hexagonal pattern is engraved and the square box is cut out from the stock</p>
+              <p>with that knowledge, we cut the music box</p>
+              <img src="images/Lasercut/lasercut.jpg" alt=""width=50% height=50%>
+              <p>i then assembled the part together</p>
+              <img src="images/Lasercut/hiyobox.jpg" alt=""width=50% height=50%>
+
+          </div>
+
+        </div>
+        <div class="3dprint" id="3dprint">
+          <h2>3D Printing</h2>
+          <p>3d printing is a form of additive manufacturing where layers of materials are deposited to create an end product</p>
+          <p>In this module we will primarily dealing with Fused Depostion Modelling FDM 3d printers. The printers mainlu used in FabLab SP are the ULtimaker 2+</p>
+          <p>for our CA2 we were tasked to 3D Print a chess piece</p>
+          <p>i a found a picture of the chess piece online and pasted the image onto a plane , proceeding to outline the shape</p>
+          <img src="images/3d/screenshot(561).png" alt="">
+          <p>I then hopped on to Fusion 360 to do the designs</p>
+          <img src="images/3d/screenshot(564).png" alt="">
+          <img src="images/3d/screenshot(566).png" alt="">
+          <iframe src="https://ichat851.autodesk360.com/shares/public/SH9285eQTcf875d3c53999cd5ca876d7ad5c?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+          <a href="https://a360.co/3DjXQDr">Download</a>
+          <p>after designing i took the f3d file and converted to stl file for the slicer called CURA to convert the 3d model into movement and instructs how the 3d printer should print</p>
+          <img src="images/3d/screenshot (105).png" alt="">
+          <img src="images/3d/screenshot (106).png" alt="">
+          <p>as for the print settings, i printed with 10% infill, with supports for overhang angle 50 degrees, and with skirt bed adhesion</p>
+          <img src="images/3d/screenshot (104).png" alt="">
+          <p>this is the outcome of the print with supports removed and post-processed with sandpaper.</p>
 
 
+        </div>
+      </div>
+    </section>
+    <section class="addbng">
     </section>
 
 
