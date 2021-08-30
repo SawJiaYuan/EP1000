@@ -165,6 +165,19 @@ html {
   position: relative;
 
 }
+.hero3 {
+  background-image: url("images/Final/EP100FINAL v7.png");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
 .instagram-media2{
 
 }

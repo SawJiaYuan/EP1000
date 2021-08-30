@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+    <!---This is the header--->
+    <header class="MainHeader">
+      <!--big EP1000 title with link-->
+      <h1 class=" big-title">
+        <a href="index.html">EP1000</a>
+      </h1>
+
+      <!--Description-->
+      <h3 class="desc">
+        Digital Fabrication and Prototyping Fundementals
+      </h3>
+
+      <!--Nav-->
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About-Me</a>
+        <a href="projects.html">Project</a>
+        <a href="finalproj.html">Final Project</a>
+      </nav>
+    </header>
+    <section class="gradient">
+    </section>
+    <!--Hero-->
+    <section class="hero3">
+
+    <div class="hero-text">
+      <h1>EP1000 Final Project</h1>
+      <p>Humidity Controlled Hydroponic Planter</p>
+    </div>
+    </section>
+    <section class="gradient2">
+    </section>
+
+
+    <!--Main content goes here-->
+    <section class="contents2">
+
+      <div class="content-text1">
+        <h1>Introduction</h1>
+        <p>With the final project, i decided to make a hydroponic planter that will control the humidity of the environment inside it,
+        this project will utilise all the design and fabrication skills i have learnt prior to this, and will utilise</p>
+        <ol>
+           <li>3D Printing </li>
+           <li>Laser Cutting </li>
+           <li>Arduino Microcontroller Programming (C++)</li>
+        </ol>
+        <h1>Conceiving the Idea</h1>
+          <p>Before the project must be started , i first sketched out several designs that i wanted to build.
+          After Discussing with the lecturer the feasability and parts selection for the project, the lecturer gave me the green light and i started designing</p>
+        <h1>How It Works</h1>
+          <p>
+          The planter has an internal reservoir inside it that holds water to water the plant and also to provide the humidifier water to make mist.
+          There is a DHT11 Temperature and humidity sensor that measures the humidity levels in the enclosure.The microcontroller uses the information and controls the fan and mister to turn on when the humidity is lesser than the set point.
+          </p>
+        <h1>3D design</h1>
+        <p>
+          I designed the model in Fusion 360 . I first designed the laser cut parts first. Followed by the 3D Printed parts. You can use your mouse and drag and interact with the window to check out the project.
+        </p>
+        <iframe src="https://ichat851.autodesk360.com/shares/public/SH9285eQTcf875d3c539d6a4bb3de2569ea9?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        <a href="https://a360.co/3DvqlOg">Download</a>
+        <p>This is the whole assembly of the project , 3D printed parts are black in color while laser cut parts are brown in color</p>
+        <h1>Components</h1>
+        <img src="images/Final/compo.jpg" alt="" width=50% height=50%>
+        <h2>Fan Duct</h2>
+        <p>The Fan Duct's main purpose is to deliver the mist into the enclosure</p>
+        <h2>Sensor Shroud</h2>
+        <p>The sensor shroud holds the DHT11 Module for humidity monitoring of the enclosure</p>
+        <h2>Edge Stay</h2>
+        <p>The edge stay prevents the acrylic top enclosure from sliding off</p>
+        <h2>Electronics Enclosure</h2>
+        <p>This is where the electronics is housed in</p>
+        <h1>Laser cutting</h1>
+        <img src="images/Final/laserfina.png" alt="" width=50% height=50%>
+        <p>this is the part that i use for laser cutting the top enclosure is acrylic while the bottom is the plywood. After designing , i converted it to dxf files and proceeded to lasercut at the lab.</p>
+        <h1>3D Printing</h1>
+        <p>The 3d printed parts are printed with PLA with the ultimaker 2+ 3d Printer</p>
+        <h1>Programming</h1>
+        <p>For the arduino i programmed it in C++</p>
+        <a href="EP1000/EP1000.ino" target="_blank">Download</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+  </body>
+
+ <!--Footer Goes Here-->
+ <footer class="main footer">
+        <h3 class="copyright"> Copyright &copy; 2021, Saw Jia Yuan</h3>
+        <nav class="nav2">
+          <a href="index.html">Home</a>
+          <a href="about.html">About-Me</a>
+          <a href="contacts.html">Contacts</a>
+        </nav>
+ </footer>
+
+</html>
