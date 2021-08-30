@@ -85,7 +85,7 @@ html {
 .content-text1{
 
   border: 2px solid black;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   position: center;
   content-top: 120px;
   text-align: left;
@@ -103,7 +103,7 @@ html {
 .content-text2{
 
   border: 2px solid black;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   position: center;
   content-top:120px;
   text-align: left;
