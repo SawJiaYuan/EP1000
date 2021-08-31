@@ -59,18 +59,27 @@
         <h1>Conceiving the Idea</h1>
           <p>Before the project must be started , i first sketched out several designs that i wanted to build.
           After Discussing with the lecturer the feasability and parts selection for the project, the lecturer gave me the green light and i started designing</p>
-          
+          <img src="images/draft1.jpg" alt="" width=80% height=80%>
+          <p>The image below showcases how the humidifying system works</p>
+          <img src="images/draft2.jpg" alt="" width=80% height=80%>
+
+
         <h1>How It Works</h1>
           <p>
           The planter has an internal reservoir inside it that holds water to water the plant and also to provide the humidifier water to make mist.
           There is a DHT11 Temperature and humidity sensor that measures the humidity levels in the enclosure.The microcontroller uses the information and controls the fan and mister to turn on when the humidity is lesser than the set point.
           </p>
+
         <h1>3D design</h1>
         <p>
           I designed the model in Fusion 360 . I first designed the laser cut parts first. Followed by the 3D Printed parts. You can use your mouse and drag and interact with the window to check out the project.
         </p>
         <iframe src="https://ichat851.autodesk360.com/shares/public/SH9285eQTcf875d3c539d6a4bb3de2569ea9?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
         <a href="https://a360.co/3DvqlOg">Download</a>
+        <p>The file is an assembly that contains all the components used in the design< the black component are 3D printed while the clear top is acrylic and the bottom enclosure is lasercut plywood</p>
+        <h1>3D Printing</h1>
+        <p>The 3d printed parts are printed with PLA with the ultimaker 2+ 3d Printer</p>
+        <h1>Programming</h1>
         <p>This is the whole assembly of the project , 3D printed parts are black in color while laser cut parts are brown in color</p>
         <h1>Components</h1>
         <img src="images/Final/compo.jpg" alt="" width=50% height=50%>
@@ -83,7 +92,7 @@
         <h2>Electronics Enclosure</h2>
         <p>This is where the electronics is housed in</p>
         <h1>Special Settings for 3D printing</h1>
-        <p>As for 3D printing the settings that i used are</p>
+        <p>I used Ultimaker Cura as my Slicer software,As for 3D printing the settings that i used are</p>
         <img src="images/3dpset.png" alt="" width=50% height=50%>
         <img src="images/3dp2.jpg" alt="" width=50% height=50%>
         <p>As for components like the Fanducts, it contains slots that are specially designed to have rounded corners, this allows of the printin gwithout of the supports</p>
@@ -95,18 +104,24 @@
         <h1>Disclaimer</h1>
         <p>The fan shroud and the hinge are found on thingiverse as i already have it 3d printed prior to the project and is just using to reduce printing time and design</p>
         <p>https://www.thingiverse.com/thing:2187167</p>
-        <p>as for the fan shroud, since i printed it a log time go i couldnt find the source files for it.</p>
-
-
-
-
+        <p>as for the fan shroud, since i printed it a long time go i couldnt find the source files for it.</p>
+        <p>Stl files for 3d printed components</p>
+        <a href="3DPRINTSTL.zip" target="_blank">Download STL Files</a>
+        <p>.GCODE for 3d printed components</p>
+        <a href="3DPRINTGCODE.zip" target="_blank">Download .GCODE Files</a>
+        <p></p>
 
         <h1>Laser cutting</h1>
         <img src="images/Final/laserfina.png" alt="" width=50% height=50%>
         <p>this is the part that i use for laser cutting the top enclosure is acrylic while the bottom is the plywood. After designing , i converted it to dxf files and proceeded to lasercut at the lab.</p>
-        <h1>3D Printing</h1>
-        <p>The 3d printed parts are printed with PLA with the ultimaker 2+ 3d Printer</p>
-        <h1>Programming</h1>
+        <p>I designed the whole enclosure using the same method as my previous laser cut box with new dimension parameters</p>
+        <img src="images/Projpara.png" alt="" width=50% height=50%>
+        <p>Creating tabs for the laser cut with parameters</p>
+        <img src="images/projlaser.png" alt="" width=50% height=50%>
+        <p></p>
+        <a href="EnclosureLasercut.zip" target="_blank">Download DxF Files</a>
+
+        <h1>Microcontroller Programming</h1>
         <p>For the arduino i programmed it in C++</p>
         <img src="images/init.png" alt="" width=50% height=50%>
         <p>this is the initialisation program where i determine the pins of the DHT11, as well as the input of the 2 relay </p>
@@ -116,8 +131,64 @@
         <p>This is the part where it uses the variables and checks whether the humidity is below or above 60%,</p>
         <p>using this , the arduino energises the relay notated by HIGH and LOW state</p>
         <a href="EP1000/EP1000.ino" target="_blank">Download Program</a>
+        <p>the I/O assignments are as shown</p>
+        <ol>
+           <li>Relay 1 --> digital 3</li>
+           <li>Relay 2 --> digital 4</li>
+           <li>DHT11 Sensor --> digital 2</li>
+           <li>I2C LCD -->(A5 and A4)</li>
 
-        <h1>Assembly</h1>
+        </ol>
+
+        <h1>Electronics Wiring</h1>
+        <p>In the Project i will be using: </p>
+        <ol>
+           <li>24 volt ultrasonic mister </li>
+           <li>5v fan </li>
+           <li>2 relay module</li>
+           <li>I2C LCD Module</li>
+           <li>DHT11 Sensor</li>
+           <li>Arduino Uno Microcontroller</li>
+        </ol>
+        <p>I drew up a wiring diagram for the project</p>
+        <img src="images/wiring.jpg" alt="" width=80% height=80%>
+        <p>after that i took some time to complete the wiring of the circuit</p>
+        <img src="images/arduinowire2.jpg" alt="" width=80% height=80%>
+        <p>The 24v supply for the mister is connected to alligator clips for use in the Lab power supply, another connection is a 24v power plug wire that i have</p>
+        <p>Summary</p>
+        <p>Relay 1 controls 5v fan </p>
+        <p>Relay 2 controls 24v mister </p>
+
+        <h1>Assembly/Integration</h1>
+        <p>It is finally time for me to assemble the whole project, i have the 3D Printed parts, laser cut parts and the wiring of the system</p>
+        <img src="images/assy1.jpg" alt="" width=70% height=70%>
+        <img src="images/assy2.jpg" alt="" width=70% height=70%>
+
+        <p>As for the fan shrouds and other 3d printed compnents I hot glued them into place using a hot glue gun</p>
+        <p>the lasercut wood and acrylic top enclosure are also hot glues together in the photo</p>
+        <p>Next I needed to integrate the electronics</p>
+        <img src="images/arduinowire.jpg" alt="" width=70% height=70%>
+        <p>The bright orange PLA printed fan shroud is where the circulating fan is located, the black box houses all the electronics</p>
+        <p>after the electrical integration, it is time to add all the other components</p>
+        <img src="images/components.png" alt="" width=70% height=70%>
+        <p>this is the labelled iagram of where the components ar located, after this i proceeded with testing</p>
+        <img src="images/electronics.jpg" alt="" width=70% height=70%>
+        <p>The LCD properly displays the temperature and humidity of the enclosure</p>
+
+        <h1>Showcase video!</h1>
+        <iframe width="1693" height="713" src="https://www.youtube.com/embed/k1xT5nt_kP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>Any improvements?</h1>
+        <p>Well there are several in mind, firstly i would like to use a 5v ultraonic mister so i can work in an entire 5 environment, reducing the need of a separate supply cable, i would like to also add a led light and maybe a ldr in the system. lastly i would also like to change the fan to a bigger fan so more air can be flowing into the misting chamber.</p>
+
+        <h1>Final Thoughts</h1>
+        <p>the project as a whole was very informative and opened my eyes in the ways of digital fabrication and prototyping, this no doubt will be used by me in the future </p>
+        <h1>Bill of Materials and Description</h1>
+        <a href="desc.pdf" target="_blank">Download PDF FIle</a>
+
+
+
+
+
 
 
 
