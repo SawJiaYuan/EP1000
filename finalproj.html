@@ -59,6 +59,7 @@
         <h1>Conceiving the Idea</h1>
           <p>Before the project must be started , i first sketched out several designs that i wanted to build.
           After Discussing with the lecturer the feasability and parts selection for the project, the lecturer gave me the green light and i started designing</p>
+          
         <h1>How It Works</h1>
           <p>
           The planter has an internal reservoir inside it that holds water to water the plant and also to provide the humidifier water to make mist.
@@ -81,6 +82,25 @@
         <p>The edge stay prevents the acrylic top enclosure from sliding off</p>
         <h2>Electronics Enclosure</h2>
         <p>This is where the electronics is housed in</p>
+        <h1>Special Settings for 3D printing</h1>
+        <p>As for 3D printing the settings that i used are</p>
+        <img src="images/3dpset.png" alt="" width=50% height=50%>
+        <img src="images/3dp2.jpg" alt="" width=50% height=50%>
+        <p>As for components like the Fanducts, it contains slots that are specially designed to have rounded corners, this allows of the printin gwithout of the supports</p>
+        <p>However, i needed to print supports just in case, due to how thin the components are. due to the internal slot, i used concentric supports that do not obstruct the entry and exit of the duct</p>
+        <img src="images/3dcon.png" alt="" width=50% height=50%>
+        <p>the support structure does not obstruct the openings in the event where the support is difficult to remove</p>
+        <img src="images/3dp1.jpg" alt="" width=50% height=50%>
+        <p>luckily due to the concentric support structure, it is easy to remove the supports</p>
+        <h1>Disclaimer</h1>
+        <p>The fan shroud and the hinge are found on thingiverse as i already have it 3d printed prior to the project and is just using to reduce printing time and design</p>
+        <p>https://www.thingiverse.com/thing:2187167</p>
+        <p>as for the fan shroud, since i printed it a log time go i couldnt find the source files for it.</p>
+
+
+
+
+
         <h1>Laser cutting</h1>
         <img src="images/Final/laserfina.png" alt="" width=50% height=50%>
         <p>this is the part that i use for laser cutting the top enclosure is acrylic while the bottom is the plywood. After designing , i converted it to dxf files and proceeded to lasercut at the lab.</p>
@@ -88,7 +108,16 @@
         <p>The 3d printed parts are printed with PLA with the ultimaker 2+ 3d Printer</p>
         <h1>Programming</h1>
         <p>For the arduino i programmed it in C++</p>
-        <a href="EP1000/EP1000.ino" target="_blank">Download</a>
+        <img src="images/init.png" alt="" width=50% height=50%>
+        <p>this is the initialisation program where i determine the pins of the DHT11, as well as the input of the 2 relay </p>
+        <img src="images/Humidity.png" alt="" width=50% height=50%>
+        <p>This is the part of the program where the arduino reads the humidity from the sensor itself and inserts these values into a variable</p>
+        <img src="images/var.png" alt="" width=50% height=50%>
+        <p>This is the part where it uses the variables and checks whether the humidity is below or above 60%,</p>
+        <p>using this , the arduino energises the relay notated by HIGH and LOW state</p>
+        <a href="EP1000/EP1000.ino" target="_blank">Download Program</a>
+
+        <h1>Assembly</h1>
 
 
 
